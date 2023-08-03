@@ -15,6 +15,7 @@ user_params = {
     "notMinor": "yes",
 }
 
+#POST
 # response = requests.post(url=pixela_endpoint, json=user_params)
 # print(response.text)
 
@@ -53,10 +54,12 @@ pixel_update_config = {
     "quantity": "10"
 }
 
+#PUT
 # response = requests.put(url=pixel_update_endpoint, json=pixel_update_config, headers=headers)
 # print(response.text)
 
 delete_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}/{today.strftime('%Y%m%d')}"
 
+#DELETE
 # response = requests.delete(url=pixel_update_endpoint, headers=headers)
 # print(response.text)
